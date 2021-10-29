@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*     background : rgb(236, 109, 5); */
+    box-sizing : border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position   : relative;
+    min-width  : 320px;
+    background: rgb(236,109,0);
+    background: linear-gradient(153deg, rgba(236,109,0,1) 76%, rgba(238,3,3,0.8799894957983193) 100%, rgba(255,255,255,1) 100%);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin-top     : 50px;
+    max-width      : 1200px;
+    display        : flex;
+    justify-content: center;
+    margin         : auto;
+    flex-wrap      : wrap;
+}
+
+.widget-card {
+    border-radius   : 8px;
+    background-color: #FFFFFF;
+    width           : 220px;
+    min-height      : 170px;
+    padding         : 24px;
+    box-shadow      : 0 1px 4px 0 rgba(14, 21, 32, 0.18);
+    margin          : 24px;
+    overflow        : hidden;
+    cursor          : pointer;
+}
+
+.widget-card:hover {
+    background-color: #fafaf0;
+
+}
+
+.widget-card:hover .price {
+    font-size    : 24px;
+    margin-bottom: 0;
+
+}
+
+.widget-card-header p {
+    text-align : center;
+    font-size  : 24px;
+    font-weight: bold;
+    margin     : 0;
+}
+
+.widget-card-header p span {
+    font-size: 12px;
+}
+
+.widget-card-body {
+    display    : flex;
+    flex-flow  : column nowrap;
+    align-items: center;
+}
+
+.widget-card-body img {
+    margin-top: 16px;
+    max-width : 200px;
+    height    : 100px;
+}
+
+.widget-card-body ul {
+    list-style: none;
+    padding   : 0;
+}
+
+.widget-card-body ul li {
+    margin-right: 8px;
+    display     : inline-block;
+}
+
+.burger-title {
+    font-size  : 20px;
+    font-weight: bold;
+    margin     : 16px 0 0 0;
+}
+
+.f-bold {
+    font-weight: bold;
+}
+
+.btn-new-burger {
+    font-size: 20px;
+    position : fixed;
+    top      : 40px;
+    left     : 0;
+}
+
+.btn-new-burger svg {
+    margin-right : 16px;
+    width        : 32px;
+    height       : 32px;
+    margin-bottom: 4px;
+}
+
+.icon-delete {
+    background: url("icons/delete-icon.svg") no-repeat center;
+    height    : 32px;
+    width     : 32px;
+    border    : none;
+}
+
+.icon-delete:hover {
+    background: rgb(201, 9, 9) url("icons/delete-icon.svg") no-repeat center;
+}
+
+.icon-edit {
+    background: url("icons/mode-edit-icon.svg") no-repeat center;
+    height    : 32px;
+    width     : 32px;
+    border    : none;
+}
+
+.icon-edit:hover {
+    background: rgb(2, 112, 202) url("icons/mode-edit-icon.svg") no-repeat center;
+}
+
+.widget-card-footer {
+    display        : flex;
+    justify-content: center;
+}
+
+.widget-card-footer button span {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    body {
+        background: rgb(213, 235, 18);
+    }
+
+    h1 {
+        margin-top : 8px;
+        font-size  : 20px;
+        font-weight: bold;
+        color      : #c40a0a;
+    }
+
+    h1 span {
+        display: none;
+    }
+
+    .widget-card {
+        width : 100%;
+        margin: 8px 0;
+    }
+
+    .btn-new-burger span {
+        display: none;
+    }
+
+    .btn-new-burger:hover span {
+        display: inline;
+    }
+
+    .btn-new-burger::selection span {
+        display: inline;
+    }
+
+    .btn-new-burger svg {
+        margin       : 0;
+        margin-bottom: 4px;
+    }
+
+    .widget-card-body {}
+}

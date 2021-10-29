@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: rgb(143, 4, 4)
+    }
+
+    p {
+        display: none;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    @media screen and (min-width: 400px) and (max-width: 600px) {
+        .p-400 {
+            display: block;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .p-600 {
+            display: block;
+        }
+        .body{
+            transition: 2s;
+            background: blue;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .p-800 {
+            display: block;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .p-1000 {
+            display: block;
+        }
+    }
+    @media (min-width: 1200px) {
+        .p-1200 {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <p class="p-400"> display block en pantallas con más de 400px</p>
+    <p class="p-600"> display block en pantallas con más de 600px</p>
+    <p class="p-800"> display block en pantallas con más de 800px</p>
+    <p class="p-1000"> display block en pantallas con más de 1000px</p>
+    <p class="p-1200"> display block en pantallas con más de 1200px</p>
+</body>
+
+</html>
